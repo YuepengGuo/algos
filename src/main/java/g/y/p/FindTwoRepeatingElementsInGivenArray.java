@@ -133,6 +133,9 @@ public class FindTwoRepeatingElementsInGivenArray {
     
     /*
      * values in array should occur only once, marked as negative, otherwise, it appears twice
+     * 
+     * A[A[i]]
+     * 
      */
     static void printRepeating_4(int arr[], int size)
     {

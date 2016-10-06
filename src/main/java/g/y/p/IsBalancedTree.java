@@ -1,12 +1,12 @@
 package g.y.p;
 
-class Node {
+class TreeNode {
 
-	public Node left;
+	public TreeNode left;
 	public int data;
-	public Node right;
+	public TreeNode right;
 
-	public Node(int data) {
+	public TreeNode(int data) {
 		this.data = data;
 	}
 
@@ -18,13 +18,13 @@ class Node {
 
 public class IsBalancedTree {
 
-	static int height(Node root) {
+	static int height(TreeNode root) {
 		if(root == null) return 0;
 		
 		return(Math.max(height(root.left), height(root.right)))+1;
 	}
 	
-	static boolean isBalanced(Node root) {
+	static boolean isBalanced(TreeNode root) {
 		if(root == null) return true;
 		
 		int leftHeight = height(root.left);
@@ -38,9 +38,9 @@ public class IsBalancedTree {
 	}
 	
 	public static void main(String[] args) {
-		Node root = new Node(1);
-		root.left = new Node(2);
-		root.right = new Node(3);
+		TreeNode root = new TreeNode(1);
+		root.left = new TreeNode(2);
+		root.right = new TreeNode(3);
 //		root.left.left = new Node(4);
 		
 		System.out.println(isBalanced(root));
