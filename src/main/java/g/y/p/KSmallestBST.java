@@ -16,7 +16,7 @@ public class KSmallestBST {
 	public int kthSmallest(TreeNode root, int k) {
 		Stack<TreeNode> stack = new Stack<TreeNode>();
 		TreeNode p = root;
-		while (stack != null || p != null) {
+		while (!stack.isEmpty() || p != null) {
 			if (p != null) {
 				stack.push(p);
 				p = p.left;
