@@ -2,6 +2,16 @@ package g.y.p;
 
 import java.util.Arrays;
 
+/**
+ * we maintain that the k smallest of the elements are sorted in a list.
+ * The larger element are in a set on the side.
+ * Initially, with k=0, all elements are in the set. sorted list are empty set.
+ * Progress is made by finding the smallest element in the remaining set of large elements
+ * and adding the selected element at the end of the sorted list of elements.
+ * This increases k by one.
+ * Stop with k = n.
+ * At this point, all the elements have been selected and the listed is sorted.
+ */
 public class Selection {
 
     private static void sort(int[] in){
