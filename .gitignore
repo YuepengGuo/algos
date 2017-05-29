@@ -1,4 +1,6 @@
 # Directories #
+.idea/
+algos.iml
 /build/
 /bin/
 target/

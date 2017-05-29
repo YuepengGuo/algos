@@ -7,7 +7,7 @@ import static java.util.Arrays.copyOfRange;
 public class MergeSortArray {
 
     static int[] sort(int[] ar) {
-        if (ar.length < 2) {
+        if (ar.length == 1 ) {
             return ar;
         }
         int mid = ar.length / 2;
