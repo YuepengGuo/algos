@@ -5,14 +5,16 @@ import java.util.Arrays;
 import static java.util.Arrays.copyOfRange;
 
 public class MergeSortArray {
+    static void sort(int[] ar, int l, int h){
+        if(l>=h) return;
+        int m = l + (h-l)/2;
+        merge(ar,l,m,ar,m+1,h);
 
-//    static int[] sort(int[] ar) {
-//        int m = l + (h-l)/2;
-//        a[l,m]
-//        a[m+1,h]
-//
-//    }
+    }
 
+    static void merge(int[] from, int fl,int fh, int[] to,int tl,int th){
+
+    }
     static int[] sort(int[] ar) {
         if (ar.length == 1 ) {
             return ar;
