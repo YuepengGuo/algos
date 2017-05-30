@@ -1,8 +1,5 @@
 package g.y.p;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  * Hello world!
  *
@@ -21,14 +18,6 @@ public class App
     	System.out.println((x|y)+" : "+Integer.toBinaryString(x|y));
     	System.out.println((x^y) +" : "+Integer.toBinaryString(x^y));
 
-
-		Queue<Integer> q = new LinkedList<>();
-
-        q.offer(3);
-        q.offer(1);
-
-        q.add(2);
-
-        System.out.println(q);
-    }
+        System.out.println(2 >>>1);
+	}
 }

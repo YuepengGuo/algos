@@ -1,6 +1,6 @@
 package g.y.p;
 
-public class AddWithourOperator {
+public class AddWithoutOperator {
 	static int add(int a, int b) {
 		if (b == 0)
 			return a;
