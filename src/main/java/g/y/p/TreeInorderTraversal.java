@@ -37,4 +37,18 @@ public class TreeInorderTraversal {
 		}
 		return res;
 	}
+	public TreeNode createTree() {
+		TreeNode root = new TreeNode(5);
+		root.left = new TreeNode(4);
+		root.right = new TreeNode(6);
+		root.left.left = new TreeNode(3);
+		root.left.right = new TreeNode(7);
+		root.right.left = new TreeNode(8);
+		return root;
+	}
+	public static void main(String args[]) {
+		TreeInorderTraversal tree = new TreeInorderTraversal();
+		TreeNode root = tree.createTree();
+		System.out.println(tree.inorderTraversal(root));
+	}
 }

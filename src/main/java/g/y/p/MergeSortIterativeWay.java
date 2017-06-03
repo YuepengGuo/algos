@@ -3,7 +3,7 @@ package g.y.p;
 import java.util.LinkedList;
 
 /**
- * Observed from recursive mergesort algorithm, actually the merge sort happens
+ * Observed from recursive mergesort algorithm, actually the merge sort_with_helper_array happens
  * in this way.
  * 
  * <pre>

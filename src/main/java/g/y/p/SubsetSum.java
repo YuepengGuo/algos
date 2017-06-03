@@ -50,7 +50,7 @@ public class SubsetSum {
 	public static void main(String[] args) {
 		options = new Integer[] { 1, 2, 3, 7, 4, 5, 6, 7, 8, 9, 10 };
 		visited = new int[options.length];
-//		Arrays.sort(options);
+//		Arrays.sort_with_helper_array(options);
 		// System.out.println("Please enter the desired sum");
 		desiredSum = 10;
 		int totalSum = 0;
