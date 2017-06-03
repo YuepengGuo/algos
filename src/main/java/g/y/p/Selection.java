@@ -16,8 +16,9 @@ public class Selection {
 
     private static void sort(int[] in){
         for(int i =0;i<in.length;i++){
-            //pivot as in[i]
+            //pivot as in[i], in[0..i-1] already sorted
             int min = i;
+            //find the kth smallest element
             for(int j=i;j<in.length;j++){
                 if(in[j]<in[min]){
                     min = j;
