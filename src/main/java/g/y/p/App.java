@@ -19,5 +19,13 @@ public class App
     	System.out.println((x^y) +" : "+Integer.toBinaryString(x^y));
 
         System.out.println(2 >>>1);
+		System.out.println(2 << 3);
+
+		String input = "saveChangesInTheEditor";
+		String[] tokens = input.split("[A-Z]");
+
+		x = 3;
+
+
 	}
 }
