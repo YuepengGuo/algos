@@ -155,9 +155,9 @@ public class FindTwoRepeatingElementsInGivenArray {
 	public static void main(String[] args) {
         int arr[] = {4, 2, 5, 5, 2, 3, 1};
         int arr_size = arr.length;
-        printRepeating_1(arr, arr_size);
-        printRepeating_2(arr, arr_size);
-        printRepeating_3(arr, arr_size);
+//        printRepeating_1(arr, arr_size);
+//        printRepeating_2(arr, arr_size);
+//        printRepeating_3(arr, arr_size);
         printRepeating_4(arr, arr_size);
 	}
 

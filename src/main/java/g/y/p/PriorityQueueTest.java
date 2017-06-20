@@ -1,14 +1,15 @@
 package g.y.p;
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class PriorityQueueTest {
-//	static class PQsort implements Comparator<Integer> {
-//
-//		public int compare(Integer one, Integer two) {
-//			return two - one;
-//		}
-//	}
+	static class PQsort implements Comparator<Integer> {
+
+		public int compare(Integer one, Integer two) {
+			return two - one;
+		}
+	}
  
 	public static void main(String[] args) {
 		int[] ia = { 1, 10, 5, 3, 4, 7, 6, 9, 8, 2};
@@ -21,8 +22,8 @@ public class PriorityQueueTest {
  
 		System.out.println("pq1: " + pq1);
  
-//		PQsort pqs = new PQsort();
-		PriorityQueue<Integer> pq2 = new PriorityQueue<Integer>(10/*, pqs*/);
+		PQsort pqs = new PQsort();
+		PriorityQueue<Integer> pq2 = new PriorityQueue<Integer>(10, pqs);
 		// In this particular case, we can simply use Collections.reverseOrder()
 		// instead of self-defined comparator
 		for (int x : ia) {
