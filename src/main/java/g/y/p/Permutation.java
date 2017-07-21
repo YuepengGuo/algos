@@ -2,8 +2,8 @@ package g.y.p;
 
 public class Permutation {
     public static void main(String[] args) {
-        permutation("1234");
-        String str = "ABC";
+//        permutation("1234");
+        String str = "ABCD";
         permu(str,0,str.length()-1);
     }
 
@@ -30,9 +30,14 @@ public class Permutation {
             System.out.println(str);
         }else{
             for(int i=l;i<=r;i++){
+                System.out.println("swap l "+ str.charAt(l) + " and i " +str.charAt(i));
                 str = swap(str,l,i);
+                System.out.println("after swap : "+str);
                 permu(str,l+1,r);
+                //backtrack
+                System.out.println("swap back l "+ str.charAt(l) + " and i " +str.charAt(i));
                 str = swap(str,l,i);
+                System.out.println("after swap back: "+str);
             }
         }
 
