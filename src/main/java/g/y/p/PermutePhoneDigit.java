@@ -15,10 +15,10 @@ public class PermutePhoneDigit {
             {'w','x','y','z'}
     };
 
-    private static void combine(char[][] keypad, int [] input,String result,int index){
+    private static void combine(char[][] keypad, int [] input,String accumulate,int index){
         //P(1) = 1
         if(index == -1){
-            System.out.println(result);
+            System.out.println(accumulate);
             return;
         }
 
@@ -28,7 +28,7 @@ public class PermutePhoneDigit {
 
         //P(N+1) = COMBINE(P(N)+Ai)
         for(int i=0;i<len;i++){
-            combine(keypad,input,keypad[currentdigit][i] +result,index-1);
+            combine(keypad,input,keypad[currentdigit][i] +accumulate,index-1);
         }
     }
 
