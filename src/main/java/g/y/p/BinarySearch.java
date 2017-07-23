@@ -26,7 +26,8 @@ public class BinarySearch {
         return -1;
     }
 
-
+    //for multiple occurrences of one entry
+    //since we are using three branches(larger,equal,less ), we only need to carefully consider equals branch now
     /**
      * low+1,
      * low<high
