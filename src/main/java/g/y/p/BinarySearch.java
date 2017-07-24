@@ -27,7 +27,8 @@ public class BinarySearch {
     }
 
     //for multiple occurrences of one entry
-    //since we are using three branches(larger,equal,less ), we only need to carefully consider equals branch now
+    //since we are using three branches pipes(larger,equal,less ),
+    //we only need to carefully handle equals branch now
     /**
      * low+1,
      * low<high
